@@ -96,6 +96,10 @@ a systematic investigation to evaluate how the text clustering algorithm works. 
 of web parsing algorithms - For example including more human intervention for html file parsing. 
 
 
+## References:
+
+1. Hoberg, G. & Phillips, G. M. Text-based industry momentum (2017) 
+2. Hoberg, G. & Phillips, G. M. Text-based network industries and endogenous product differentiation (2016)
 
 
 
