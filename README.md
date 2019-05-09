@@ -75,19 +75,21 @@ $ ./utils_web/get_business_desc.py
 
 #### 2.1&2 Unify word format: Remove special characters, punctuations & stop words, perform lemmatization & tokenization etc.
 ```bash
-$ ./utils_web/text_processing.py
+$ ./utils_nlp/text_processing.py
 ```
 #### 2.3 Perform K Means clustering on the tf-idf representation of company profiles
 ```bash
-$ ./utils_web/kmeans_industry_clustering.py
+$ ./utils_nlp/kmeans_industry_clustering.py
 ```
-Some sample results are:
+We can select top 5 largest clusters and print the most frequent words. Some sample results are:
 ```
 For cluster number 31 the top 10 most seen words are: ['product', 'drug', 'fda', 'trial', 'patent', 'approval', 'patient', 'development', 'state', 'study']
 For cluster number 74 the top 10 most seen words are: ['bank', 'capital', 'company', 'loan', 'institution', 'banking', 'act', 'asset', 'risk', 'regulation']
 For cluster number 37 the top 10 most seen words are: ['customer', 'service', 'product', 'solution', 'software', 'datum', 'business', 'technology', 'market', 'application']
 For cluster number 40 the top 10 most seen words are: ['loan', 'bank', 'company', 'asset', 'interest', 'december', 'capital', 'rate', 'year', 'security']
 For cluster number 50 the top 10 most seen words are: ['company', 'product', 'year', 'customer', 'stock', 'sale', 'tax', 'share', 'revenue', 'december']
+
+We can see the top cluster seems to be a medical company group. 
 ```
 Because currently we have only ~600 companies in our dataset and the cluster number is large (100), we are not able to perform
 a systematic investigation to evaluate how the text clustering algorithm works. The topic priority is to improve the performance
