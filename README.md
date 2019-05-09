@@ -91,7 +91,7 @@ For cluster number 50 the top 10 most seen words are: ['company', 'product', 'ye
 
 We can see the top cluster seems to be a medical company group. The second group is more likely consist of banks. Companies 
 in the third group are likely involved in software vender services. 
-``
+```
 Because currently we have only ~600 companies in our dataset and the cluster number is large (100), we are not able to perform
 a systematic investigation to evaluate how the text clustering algorithm works. The topic priority is to improve the performance
 of web parsing algorithms - For example including more human intervention for html file parsing. 
